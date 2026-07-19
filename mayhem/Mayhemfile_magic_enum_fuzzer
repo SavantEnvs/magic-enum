@@ -1,0 +1,8 @@
+project: savantenvs/magic-enum
+target: magic_enum_fuzzer
+cmds:
+  - cmd: /mayhem/magic_enum_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/magic_enum_fuzzer/testsuite
